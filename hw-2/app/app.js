@@ -6,14 +6,14 @@ angular.module('questions', []).constant('Data', {
             {value: 'Some days'},
             {value: 'Rarely'},
             {value: 'Never'}
-        ]},
+        ], correct: "Never"},
         {question: 'What is the best pet for your home?', options: [
             {value: 'Cat'},
             {value: 'Dog'},
             {value: 'Fish'},
             {value: 'Rabbit'},
             {value: 'Other'}
-        ]},
+        ], correct: },
         {question: 'What is your preferred bank?', options: [
             {value: 'Chase'},
             {value: 'Citi'},
