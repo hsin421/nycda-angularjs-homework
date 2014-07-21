@@ -31,7 +31,7 @@
                     ng-repeat="q in questions"
                     ng-class="getRowClass(q)"
                     ng-click="onSelectQuestion(q)">
-                    <td>{{q.question}}</td>
+                    <td>{{q.question}} </td>
                 </tr>
                 </tbody>
             </table>
@@ -44,10 +44,13 @@
                 <div class="panel-body">
                     <button type="button"
                             class="btn btn-lg btn-block"
-                            ng-class="option == selectedQuestion.answer ? 'btn-primary' : 'btn-default'"
+                            ng-class="colorResponse(selectedQuestion, option)"
                             ng-repeat="option in selectedQuestion.options"
-                            ng-click="onSelectAnswer(selectedQuestion, option)">{{option.value}}
+                            ng-click="onSelectAnswer(selectedQuestion, option); check(option)">{{option.value}}
+                           
                     </button>
+
+                          
                 </div>
             </div>
         </div>

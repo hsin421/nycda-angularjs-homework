@@ -5,3 +5,15 @@ h1 {
 .clickable {
     cursor: pointer;
 }
+
+.btn-primary-true{
+    background-color: #45B29D;
+    color:white;
+
+}
+
+.btn-primary-false{
+    background-color: #DF4949;
+    color:white;
+
+}
